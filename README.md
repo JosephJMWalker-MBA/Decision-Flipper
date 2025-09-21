@@ -1,35 +1,22 @@
-# Decision-Flipper
-An app that helps you make decisions about the small choices in life.
+# Decision Flipper
 
-Decision-Flipper is a playful application that uses a coin flip and AI-generated suggestions to help you make quick choices. The project is intended for lighthearted decision-making; you remain responsible for your own real-world decisions.
-
-## Goals
-- Provide an easy way to flip a virtual coin to resolve simple dilemmas.
-- Generate short ads or suggestions using an AI model to add extra fun to your choices.
-
-## Setup
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
-3. Visit `http://localhost:3000` in your browser.
-
-## API Keys
-The app requires an API key for the AI integration. Create a `.env` file in the project root and add your key:
-
-```bash
-OPENAI_API_KEY=your-openai-api-key-here
-```
-
-Make sure to restart the development server after updating environment variables.
+Welcome to Decision Flipper! This is a fun and interactive web application built with Next.js that helps you make decisions when you're feeling indecisive. Just type or speak your question, and let AI and a bit of luck guide you!
 
 ## Features
-- **Coin Flip** – Click a button to instantly get heads or tails for trivial decisions.
-- **Ad Generation** – Provide a prompt and the AI will generate a short, playful advertisement or suggestion.
 
-## Disclaimer
-Decision-Flipper is meant for entertainment only. Use it as a fun aid, but your actual choices are your own responsibility.
+-   **AI-Powered Suggestions**: Enter a question, and the app uses Google's Gemini AI to generate two creative, personalized options for you—one for "heads" and one for "tails".
+-   **Bring Your Own Key (BYOK)**: To keep this app accessible for everyone without incurring API costs for the developer, it requires you to use your own Gemini API key. Your key is stored securely in your browser's local storage.
+-   **Voice Dictation**: Use the microphone button to speak your question directly into the app.
+-   **Interactive UI**: A sleek and modern interface with an animated coin flip.
+
+## Getting Started
+
+1.  **Get a Gemini API Key**: You'll need a Google Gemini API key to use the app's generative AI features. You can get one for free from [Google AI Studio](https://aistudio.google.com/app/apikey).
+2.  **Enter Your Key**: Click the settings icon (⚙️) in the top-right corner of the app. Paste your API key into the input field and click "Save Key".
+3.  **Ask and Flip**: Type or dictate your question, click the "Flip for it!" button, and see what fate decides for you!
+
+## Tech Stack
+
+-   **Framework**: [Next.js](https://nextjs.org/)
+-   **AI**: [Google's Genkit](https://firebase.google.com/docs/genkit) with the Gemini model
+-   **UI**: [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), [ShadCN UI](https://ui.shadcn.com/)
